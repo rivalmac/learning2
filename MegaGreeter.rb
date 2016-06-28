@@ -9,7 +9,7 @@ class MegaGreeter
 
 	def say_hi
 		if @names .nil?
-			puts "There's no one here"
+			puts "There's no one here, really"
 		elsif @names.respond_to?("each")
 			@names.each do |name|
 				puts "Piss Off #{name}!"
@@ -47,5 +47,3 @@ if __FILE__ == $0
 	mg.say_hi
 	mg.say_bye
 end
-
-				
